@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int i, j, n, col;
+
+    /* Number of columns */
+    printf("Enter number of columns:");
+    scanf("%d",&n);
+
+    col=1;
+
+    for(i=1;i<n*2;i++)
+    {
+        for(j=1; j<=col; j++)
+        {
+            printf("*");
+        }
+
+        if(i < n)
+        {
+            columns++;
+        }
+        else
+        {
+            columns--;
+        }
+
+        /* Move to next line */
+        printf("\n");
+    }
+
+    return 0;
+}
